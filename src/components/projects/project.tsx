@@ -11,13 +11,13 @@ export default function Project({
   status,
 }: ProjectProps) {
   return (
-    <div className="select-non hover:bg-muted group flex w-full cursor-default flex-col items-start justify-start gap-2 rounded-md px-0 py-6 transition-all duration-300 ease-in-out hover:px-8">
-      <p className="text-muted-foreground">
+    <div className="bg-muted md:hover:bg-muted group flex w-full cursor-default select-none flex-col items-start justify-start gap-2 rounded-md px-6 py-6 transition-all duration-300 ease-in-out md:bg-transparent md:px-0 md:hover:pl-8">
+      <p className="text-muted-foreground text-sm md:text-base">
         {started} - {ended}
       </p>
 
       <div className="flex items-center gap-1">
-        <p className="font-cal text-lg">{title} -</p>
+        <p className="font-cal md:text-lg">{title} -</p>
         <span
           className={cn(
             "text-xs",
@@ -34,7 +34,9 @@ export default function Project({
         />
       </div>
       <div>
-        <p className="text-muted-foreground">{description}</p>
+        <p className="text-muted-foreground text-sm md:text-base">
+          {description}
+        </p>
         <a
           target="_blank"
           rel="noopener noreferrer"

@@ -19,7 +19,7 @@ export default function Cursor() {
   return (
     <div
       id="cursor"
-      className="absolute z-[50] h-[8px] w-[8px] rounded-full bg-white"
+      className="absolute z-[50] hidden h-[8px] w-[8px] rounded-full bg-white md:block"
     />
   );
 }

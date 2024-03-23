@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <div className="container flex flex-col items-start justify-start gap-6">
       <div className="flex items-center gap-3">
-        <h2 className="font-cal text-start text-6xl font-bold">
+        <h2 className="font-cal text-start text-3xl font-bold md:text-6xl">
           Latest Projects
         </h2>
         <ArrowDownIcon />

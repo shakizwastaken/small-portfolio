@@ -67,12 +67,18 @@ export default function Hero() {
   return (
     <div
       id="hero-section"
-      className="container flex h-[80vh] flex-col items-start justify-center"
+      className="container flex h-[50vh] flex-col items-start justify-center md:h-[80vh]"
     >
-      <h1 id="hero-headline" className="font-cal text-8xl font-bold">
+      <h1
+        id="hero-headline"
+        className="font-cal text-3xl font-bold md:text-8xl"
+      >
         Hello, I'm Yahya👋.
       </h1>
-      <p id="hero-sub" className="text-muted-foreground move-up w-full text-lg">
+      <p
+        id="hero-sub"
+        className="text-muted-foreground move-up w-full md:text-lg"
+      >
         A very passionate software engineer and indie hacker based in Morocco!
       </p>
       <div id="hero-icons" className="flex items-center">
