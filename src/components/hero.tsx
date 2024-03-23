@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react";
 import { GithubIcon, TwitterIcon } from "lucide-react";
 import SplitType from "split-type";
 import gsap from "gsap";
+import { Avatar, AvatarImage } from "./ui/avatar";
 
 export default function Hero() {
   const mapIcons = () =>
@@ -69,6 +70,9 @@ export default function Hero() {
       id="hero-section"
       className="container flex h-[50vh] flex-col items-start justify-center md:h-[80vh]"
     >
+      <Avatar className="md:h-[75px] md:w-[75px]">
+        <AvatarImage src="/me.jpg" alt="" />
+      </Avatar>
       <h1
         id="hero-headline"
         className="font-cal text-3xl font-bold md:text-8xl"

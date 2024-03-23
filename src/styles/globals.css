@@ -79,12 +79,12 @@
   body {
     @apply bg-background text-foreground;
   }
-}
 
-h1 :has(> .move-up) {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
+  h1 :has(> .move-up) {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 
-.move-up {
-  @apply translate-y-[130px] transition-all duration-75 ease-in-out;
+  .move-up {
+    @apply translate-y-[130px] transition-all duration-75 ease-in-out;
+  }
 }
