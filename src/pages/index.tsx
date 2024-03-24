@@ -2,6 +2,7 @@ import Cursor from "@/components/cursor";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Projects from "@/components/projects";
+import Skills from "@/components/skills";
 import { Spotlight } from "@/components/ui/spotlight";
 
 export default function _page() {
@@ -13,6 +14,7 @@ export default function _page() {
       />
       <Cursor />
       <Hero />
+      <Skills />
       <Projects />
       <Footer />
     </div>
