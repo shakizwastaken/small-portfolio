@@ -11,8 +11,8 @@ export default function Project({
   status,
 }: ProjectProps) {
   return (
-    <div className="bg-muted md:hover:bg-muted group flex w-full cursor-default select-none flex-col items-start justify-start gap-2 rounded-md px-6 py-6 transition-all duration-300 ease-in-out md:bg-transparent md:px-0 md:hover:pl-8">
-      <p className="text-muted-foreground text-sm md:text-base">
+    <div className="group flex w-full cursor-default select-none flex-col items-start justify-start gap-2 rounded-md bg-muted px-6 py-6 transition-all duration-300 ease-in-out md:bg-transparent md:px-0 md:hover:bg-muted md:hover:pl-8">
+      <p className="text-sm text-muted-foreground md:text-base">
         {started} - {ended}
       </p>
 
@@ -34,7 +34,7 @@ export default function Project({
         />
       </div>
       <div>
-        <p className="text-muted-foreground text-sm md:text-base">
+        <p className="text-sm text-muted-foreground md:text-base">
           {description}
         </p>
         <a
